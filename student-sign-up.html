@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>
+    Sign Up
+  </title>
+  
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: url('src/anotherbg.png') no-repeat center center fixed;
+      background-size: cover;
+    }
+
+    .container {
+      display: flex;
+      min-height: 100vh;
+      background-color: rgba(255, 255, 255, 0.9);
+    }
+
+    .left-panel {
+      background-color: #890000;
+      color: white;
+      width: 35%;
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .left-panel .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 20px;
+    }
+
+    .left-panel .brand img {
+      width: 23px;
+      height: auto;
+    }
+
+    .left-panel .brand span {
+      font-size: 25px;
+      font-weight: bold;
+
+    }
+
+    .left-panel .tagline {
+      font-size: 18px;
+      text-align: center;
+      max-width: 300px;
+    }
+
+    .right-panel {
+      width: 65%;
+      padding: 32px 64px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .dorm-logo {
+      width: 150px;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      margin-bottom: 24px;
+    }
+
+    .form {
+      width: 100%;
+      max-width: 600px;
+      background: white;
+      padding: 32px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .input-row {
+      display: flex;
+      gap: 16px;
+      margin-bottom: 16px;
+    }
+
+    .input-row input,
+    .input-row select {
+      flex: 1;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+
+    .checkboxing {
+      margin: 16px 0;
+      font-size: 14px;
+    }
+
+    .checkboxing a {
+      color: #890000;
+      text-decoration: none;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 16px;
+    }
+
+    .btn {
+      padding: 10px 24px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .btn.back {
+      background-color: #ccc;
+    }
+
+    .btn.next {
+      background-color: #890000;
+      color: white;
+    }
+
+    .signin-link {
+      font-size: 14px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="left-panel">
+      <div class="brand">
+        <img src="src/logologo.png" alt="Logo" />
+        <span>BaDoCo</span>
+      </div>
+      <p class="tagline">A smart and safe dorm finder</p>
+    </div>
+
+    <div class="right-panel">
+      <img src="src/png_logo.png" alt="DormConnect Logo" class="dorm-logo">
+      <h2>Create Account</h2>
+
+      <form class="form">
+        <div class="input-row">
+          <input type="text" placeholder="First Name" required>
+          <input type="text" placeholder="Last Name" required>
+        </div>
+
+        <div class="input-row">
+          <input type="text" placeholder="Email" required>
+          <input type="tel" placeholder="Contact Number" required>
+        </div>
+
+        <div class="input-row">
+          <input type="text" placeholder="School" required>
+          <select required>
+            <option value="" disabled selected>Gender</option>
+            <option value="Male"> Male </option>
+            <option value="Female"> Female </option>
+            <option value="Rather not say"> Rather not say </option>
+          </select>
+        </div>
+
+        <div class="input-row">
+          <input type="password" placeholder="Password" required>
+        </div>
+
+        <div class="checkboxing">
+          <input type="checkbox" required> 
+          <label>
+            By signing up, you agree to the <a href="#">Terms and Conditions</a> and <a href="#">Privacy Policy</a>.
+          </label>
+        </div>
+
+        <div class="buttons">
+          <button type="button" class="btn back">
+            Back
+          </button>
+          <button type="button" class="btn next">
+            Next
+          </button>
+        </div>
+
+        <p class="signin-link">Already have an account? <a href="#">Click here.</a></p>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
